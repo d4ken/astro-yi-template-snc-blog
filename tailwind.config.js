@@ -35,12 +35,15 @@ export default {
     textColor: {
       skin: {
         base: withOpacity("--color-text"),
-        active: withOpacity("--color-text-active")
+        active: withOpacity("--color-text-active"),
+        accent: withOpacity("--color-text-accent"),
       },
     },
 
     backgroundColor: {
       skin: {
+        active: withOpacity("--color-active"),
+        accent: withOpacity("--color-accent"),
         fill: withOpacity("--color-fill"),
         secondary: withOpacity("--color-fill-secondary"),
         card: withOpacity("--color-card"),
@@ -66,6 +69,7 @@ export default {
           subtitle: "#999",
           hover: "#e0a419",
           active: "#ff7f50",
+          accent: "#77aeff",
           grey: "#f6f6f6",
           nav: "#ded6d8",
           primary: "#edede9",

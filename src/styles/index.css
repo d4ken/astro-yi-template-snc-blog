@@ -38,21 +38,27 @@ menu {
   :root,
   html[data-theme="light"] {
     --color-fill: 241, 241, 241;
-    --color-fill-secondary: 251, 251, 251;
+    --color-fill-secondary: 235, 238, 245;
     --color-card: 241, 241, 241;
+    --color-active: 203, 223, 255;
+    --color-accent: 230, 239, 255;
     --color-text: 80, 73, 69;
-    --color-text-active: 181, 118, 20;
+    --color-text-active: 119, 174, 255;
+    --color-text-accent: 119, 174, 255;
     --color-border: 104, 157, 106;
     --color-border-active: 14, 192, 124;
     --color-modal: 52, 58, 64;
   }
 
   html[data-theme="dark"] {
-    --color-fill: 40, 40, 40;
-    --color-fill-secondary: 52, 58, 64;
+    --color-fill: 25, 30, 36;
+    --color-fill-secondary: 10, 13, 20;
     --color-card: 40, 42, 54;
+    --color-active: 59, 74, 98;
+    --color-accent: 43, 54, 72;
     --color-text: 249, 244, 227;
-    --color-text-active: 250, 189, 47;
+    --color-text-active: 119, 174, 255;
+    --color-text-accent: 119, 174, 255;
     --color-border: 214, 93, 14;
     --color-border-active: 7, 102, 120;
     --color-modal: 251, 251, 251;
