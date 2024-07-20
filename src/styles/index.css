@@ -8,8 +8,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "jetbrains-mono";
-  src: url('./JetBrainsMono-Regular.ttf');
+  font-family: "firacode";
+  src: url('./FiraCode-Regular.woff2') format('woff2');
 }
 
 /**
