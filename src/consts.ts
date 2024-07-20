@@ -16,17 +16,17 @@
  * beian {string} Chinese policy
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
+  title: 'SNCreate', // required
   favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
-  author: "Astro-Yi", // required
+  author: "D4ken", // required
   avatar: '/avatar.png', // required
-  motto: 'Actions speak louder than words.',
-  url: 'https://astro-yi-nu.vercel.app',
+  motto: 'Learn from your mistakes.',
+  url: 'https://sncreate.blue',
   recentBlogSize: 5,
   archivePageSize: 25,
-  postPageSize: 10,
-  feedPageSize: 20,
+  postPageSize: 6,
+  feedPageSize: 10,
   beian: '',
 }
 
@@ -38,7 +38,7 @@ export const site = {
  */
 export const config = {
   busuanzi: false,
-  lang: 'en', // en | zh-cn
+  lang: 'ja', // en | zh-cn
   codeFoldingStartLines: 16, // Need to re-run the project to take effect
   ga: false // If you want to integrate with Google Analytics, just enter your GA-ID here.
 }
@@ -57,43 +57,16 @@ export const categories = [
     href: "/blog/1",
   },
   {
-    name: "Feed",
-    iconClass: "ri-lightbulb-flash-line",
-    href: "/feed/1",
-  },
-  {
     name: "Archive",
     iconClass: "ri-archive-line",
     href: "/archive/1",
-  },
-  {
-    name: "Message",
-    iconClass: "ri-chat-1-line",
-    href: "/message",
   },
   {
     name: "Search",
     iconClass: "ri-search-line",
     href: "/search",
   },
-  {
-    name: "More",
-    iconClass: "ri-more-fill",
-    href: "javascript:void(0);",
-    children: [
-      {
-        name: 'About',
-        iconClass: 'ri-information-line',
-        href: '/about',
-      },
-      {
-        name: 'Friends',
-        iconClass: 'ri-user-5-line',
-        href: '/friends',
-        target: '_self',
-      },
-    ]
-  }
+
 ]
 
 /**
@@ -101,29 +74,19 @@ export const categories = [
  */
 export const infoLinks = [
   {
-    icon: 'ri-telegram-fill',
-    name: 'telegram',
-    outlink: 'xxxxxxx',
-  },
-  {
-    icon: 'ri-twitter-fill',
-    name: 'twitter',
-    outlink: 'xxxxxxx',
-  },
-  {
-    icon: 'ri-instagram-fill',
-    name: 'instagram',
-    outlink: 'xxxxxxx',
+    icon: 'ri-soundcloud-fill',
+    name: 'soundcloud',
+    outlink: 'https://soundcloud.com/escaity',
   },
   {
     icon: 'ri-github-fill',
     name: 'github',
-    outlink: 'https://github.com/cirry',
+    outlink: 'https://github.com/d4ken',
   },
   {
-    icon: 'ri-rss-fill',
-    name: 'rss',
-    outlink: 'https://astro-yi-nu.vercel.app/rss.xml',
+    icon: 'ri-steam-fill',
+    name: 'steam',
+    outlink: 'https://steamcommunity.com/profiles/76561198258227754/',
   }
 ]
 
