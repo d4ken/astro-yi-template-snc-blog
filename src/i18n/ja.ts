@@ -28,6 +28,7 @@ export const ja = {
   'pagination.total': '全',
   'pagination.unit': 'ページ',
   'post.dateFormat': 'YYYY年MM月DD日',
+  'post.createdAt': '作成日',
   'post.lastUpdated': '最終更新日',
   'search.labelOne': '',
   'search.labelTwo': 'のカテゴリーの記事を表示中',
