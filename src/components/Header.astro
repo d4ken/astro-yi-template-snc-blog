@@ -15,12 +15,12 @@ let categoryCount = getCountByCategory(blogs);
 let tagCount = getCountByTagName(blogs);
 ---
 
-<header class="fixed top-0 w-full bg-skin-fill text-skin-base z-10">
+<header class="top-0 w-full bg-skin-fill text-skin-base z-10">
   <div class="flex items-center justify-between container">
     <div class="block xl:hidden">
       <MenuIcon></MenuIcon>
     </div>
-    <a class="text-2xl p-4" href="/">{site.title}</a>
+    <a class="ri-home-8-line text-2xl text-skin-accent p-4" href="/"> {site.title}</a>
     <div class="flex items-center">
       <div class="hidden xl:block">
         <div class="flex items-center space-x-5 pr-4">
