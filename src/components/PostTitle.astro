@@ -6,15 +6,41 @@ const {title, date, category, tags, lastModified = '', draft = false, readingTim
 ---
 
 <div class="border-b-1">
+  <!-- category -->
+  {
+    category && dealLabel(category).filter(item => item !== 'uncategorized').map((categoryName) => (
+      <i class="ri-folder-3-line"/>
+      <a href={"/category/" + categoryName} class="text-wrap break-all  hover:text-skin-active cursor-pointer">{categoryName}</a>
+    ))
+  }
+
+  <!-- tag -->
+  {
+    tags && dealLabel(tags).map((tagName) => (
+      <div class="divider-vertical"/>
+      <i class="ri-price-tag-3-line"/>
+      <a href={"/tags/" + tagName} class="text-wrap break-all hover:text-skin-active cursor-pointer">{tagName}</a>
+    ))
+  }
+
   <!-- title -->
-  <h1 class="break-all text-xl font-bold">{title}</h1>
+  <h1 class="break-all text-2xl mt-3 mb-2.5 font-bold">{title}</h1>
 
   <div class="flex flex-wrap items-center my-2 space-x-2">
     <!-- date -->
     {
       date && (
         <i class="ri-calendar-2-fill"/>
-        <div class="tag">{formatDate(date)}</div>
+        <div class="tag">{t('post.createdAt')}：{formatDate(date)}</div>
+      )
+    }
+
+    <!-- update -->
+    {
+      lastModified && (
+        <div class="divider-vertical"/>
+        <i class="ri-calendar-check-fill"></i>
+        <div class="tag">{t('post.lastUpdated')}：{lastModified}</div>
       )
     }
 
@@ -28,42 +54,5 @@ const {title, date, category, tags, lastModified = '', draft = false, readingTim
       </>
     }
 
-    <!-- category -->
-    {
-      category && dealLabel(category).filter(item => item !== 'uncategorized').map((categoryName) => (
-        <div class="divider-vertical"/>
-        <i class="ri-folder-3-line"/>
-        <a href={"/category/" + categoryName} class="text-wrap break-all  hover:text-skin-active cursor-pointer">{categoryName}</a>
-      ))
-    }
-
-    <!-- tag -->
-    {
-      tags && dealLabel(tags).map((tagName) => (
-        <div class="divider-vertical"/>
-        <i class="ri-price-tag-3-line"/>
-        <a href={"/tags/" + tagName} class="text-wrap break-all hover:text-skin-active cursor-pointer">{tagName}</a>
-      ))
-    }
-
-    <!-- update -->
-    {
-      lastModified && (
-        <div class="divider-vertical"/>
-        <i class="ri-calendar-check-fill"></i>
-        <div class="tag">{t('post.lastUpdated')}：{lastModified}</div>
-      )
-    }
-
-    <!-- minutes -->
-    {
-      readingTime.minutes && (
-        <div class="divider-vertical"/>
-        <i class="ri-hourglass-fill"/>
-        <div class="tag">{Math.ceil(readingTime.minutes)}{t('title.minutes')}</div>
-        <div class="divider-vertical"/>
-        <div class="tag">{readingTime.words}{t('title.words')}</div>
-      )
-    }
   </div>
 </div>
